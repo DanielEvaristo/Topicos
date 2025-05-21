@@ -27,7 +27,8 @@
 }
 
 .action-card {
-    background-color: white;
+    background-color: var(--primary-light);  /* fondo primario claro */
+    border: 2px solid var(--primary);         /* borde primario */
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.05);
     padding: 25px;
@@ -42,10 +43,12 @@
 .action-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+    background-color: var(--primary-dark);   /* fondo primario oscuro */
+    border-color: var(--primary-dark);
 }
 
 .action-icon {
-    background-color: rgba(67, 97, 238, 0.1);
+    background-color: rgba(255,255,255,0.3);
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -53,7 +56,7 @@
     align-items: center;
     justify-content: center;
     font-size: 24px;
-    color: var(--primary);
+    color: white;
     margin-right: 20px;
     flex-shrink: 0;
 }
@@ -66,24 +69,30 @@
     font-size: 18px;
     font-weight: 600;
     margin-bottom: 5px;
+    color: white;                            /* texto en blanco */
 }
 
 .action-description {
-    color: var(--gray);
+    color: rgba(255,255,255,0.9);            /* texto en blanco suave */
     font-size: 14px;
 }
 
-/* Modo oscuro */
 body.dark-mode .welcome-subheading {
     color: var(--gray-light);
 }
 
 body.dark-mode .action-card {
-    background-color: #1e1e1e;
+    background-color: rgba(67,97,238,0.2);    /* primario claro en dark */
+    border-color: var(--primary);
 }
 
+body.dark-mode .action-card:hover {
+    background-color: var(--primary);         /* primario en dark */
+}
+
+body.dark-mode .action-title,
 body.dark-mode .action-description {
-    color: #aaa;
+    color: #f4f6f9;
 }
 
 /* Media queries */

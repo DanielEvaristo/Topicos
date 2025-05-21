@@ -1,0 +1,75 @@
+<!-- pages/free-practice.html -->
+<div class="free-practice-container container">
+
+  <!-- Título -->
+  <h1 class="page-title text-center mb-8">Selecciona el tipo de práctica</h1>
+
+  <!-- Tarjetas -->
+  <div class="practice-cards mb-8">
+    <!-- Preguntas técnicas -->
+    <div class="practice-card">
+      <h2>Preguntas técnicas</h2>
+      <p>Practica respondiendo preguntas específicas sobre conceptos y tecnologías.</p>
+      <label for="tech-select">Selecciona tecnología:</label>
+      <select id="tech-select" class="form-control mb-4">
+        <option>React</option>
+        <option>Node.js</option>
+        <option>Python</option>
+        <option>Java</option>
+      </select>
+      <label for="tech-diff">Nivel de dificultad:</label>
+      <select id="tech-diff" class="form-control mb-6">
+        <option>Básico</option>
+        <option>Intermedio</option>
+        <option>Avanzado</option>
+      </select>
+      <button class="btn-primary start-btn" data-type="tech">Comenzar</button>
+    </div>
+
+    <!-- Problemas de algoritmos -->
+    <div class="practice-card">
+      <h2>Problemas de algoritmos</h2>
+      <p>Resuelve ejercicios de lógica de programación y estructuras de datos.</p>
+      <label for="algo-select">Tipo de problema:</label>
+      <select id="algo-select" class="form-control mb-4">
+        <option>Strings y Arrays</option>
+        <option>Recursión</option>
+        <option>Grafos</option>
+      </select>
+      <label for="algo-diff">Nivel de dificultad:</label>
+      <select id="algo-diff" class="form-control mb-6">
+        <option>Fácil</option>
+        <option>Medio</option>
+        <option>Difícil</option>
+      </select>
+      <button class="btn-primary start-btn" data-type="algo">Comenzar</button>
+    </div>
+
+    <!-- Comunicación técnica -->
+    <div class="practice-card">
+      <h2>Comunicación técnica</h2>
+      <p>Practica explicando conceptos técnicos y defensa de decisiones de diseño.</p>
+      <label for="comm-select">Tipo de ejercicio:</label>
+      <select id="comm-select" class="form-control mb-4">
+        <option>Explicación de proyecto</option>
+        <option>Defensa de diseño</option>
+        <option>Role play</option>
+      </select>
+      <label for="comm-focus">Enfoque:</label>
+      <select id="comm-focus" class="form-control mb-6">
+        <option>Frontend</option>
+        <option>Backend</option>
+        <option>Fullstack</option>
+      </select>
+      <button class="btn-primary start-btn" data-type="comm">Comenzar</button>
+    </div>
+  </div>
+
+  <!-- Volver -->
+  <div class="text-center">
+    <button id="btn-back" class="btn-outline">Volver</button>
+  </div>
+
+</div>
+
+<script src="../assets/js/pages/free-practice.js"></script>

@@ -1,0 +1,55 @@
+<!-- pages/mentor-session.html -->
+<div class="mentor-session-container container">
+
+  <!-- Pasos -->
+  <ol class="steps mb-6" aria-label="Flujo de práctica">
+    <li class="step done"><span class="step-icon">1</span><span class="step-text">Inicio</span></li>
+    <li class="step done"><span class="step-icon">2</span><span class="step-text">Búsqueda</span></li>
+    <li class="step done"><span class="step-icon">3</span><span class="step-text">Skill Map</span></li>
+    <li class="step done"><span class="step-icon">4</span><span class="step-text">Sesión IA</span></li>
+    <li class="step current"><span class="step-icon">5</span><span class="step-text">Mentor</span></li>
+    <li class="step"><span class="step-icon">6</span><span class="step-text">Reporte</span></li>
+  </ol>
+
+  <!-- Encabezado -->
+  <header class="session-header mb-8">
+    <div>
+      <h1 class="page-title">Selecciona tu Mentor</h1>
+      <p class="subtitle">Elige uno de nuestros expertos para recibir feedback personalizado.</p>
+    </div>
+    <div class="live-indicator">
+      <span class="live-dot"></span>
+      <span class="live-text">Sesión en vivo</span>
+    </div>
+  </header>
+
+  <!-- Lista de mentores -->
+  <section class="mentor-list-section">
+    <div class="mentor-list">
+      <div class="mentor-card" data-id="1">
+        <img src="/assets/images/mentor1.jpg" alt="María López" class="mentor-avatar">
+        <div class="mentor-content">
+          <h3>María López</h3>
+          <p class="role">Ingeniera Senior Frontend</p>
+        </div>
+      </div>
+      <div class="mentor-card" data-id="2">
+        <img src="/assets/images/mentor2.jpg" alt="Carlos Pérez" class="mentor-avatar">
+        <div class="mentor-content">
+          <h3>Carlos Pérez</h3>
+          <p class="role">Arquitecto de Software</p>
+        </div>
+      </div>
+      <!-- Añade más mentor-card si hace falta -->
+    </div>
+  </section>
+
+  <!-- Controles -->
+  <div class="session-controls">
+    <button id="btn-prev" class="btn-outline">Volver</button>
+    <button id="btn-start" class="btn-primary" disabled>Iniciar Mentor</button>
+  </div>
+
+</div>
+
+<script src="../assets/js/pages/mentor-session.js"></script>

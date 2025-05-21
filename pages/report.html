@@ -1,0 +1,58 @@
+<!-- pages/report.html -->
+<div class="report-container container">
+
+  <!-- Pasos -->
+  <ol class="steps mb-6" aria-label="Flujo de práctica">
+    <li class="step done"><span class="step-icon">1</span><span class="step-text">Inicio</span></li>
+    <li class="step done"><span class="step-icon">2</span><span class="step-text">Búsqueda</span></li>
+    <li class="step done"><span class="step-icon">3</span><span class="step-text">Skill Map</span></li>
+    <li class="step done"><span class="step-icon">4</span><span class="step-text">Sesión IA</span></li>
+    <li class="step done"><span class="step-icon">5</span><span class="step-text">Mentor</span></li>
+    <li class="step current"><span class="step-icon">6</span><span class="step-text">Reporte</span></li>
+  </ol>
+
+  <!-- Título -->
+  <header class="report-header mb-8">
+    <h1 class="page-title">Tu Informe de Simulación</h1>
+    <p class="subtitle">Resumen completo de tu práctica y recomendaciones.</p>
+    <div class="report-meta">
+      <span>Fecha: <strong id="report-date">–</strong></span>
+      <span>Duración: <strong id="report-duration">–</strong></span>
+    </div>
+  </header>
+
+  <!-- Puesto Objetivo -->
+  <section class="report-section mb-6">
+    <h2 class="section-title">Puesto Objetivo</h2>
+    <div id="report-role" class="report-box">Cargando...</div>
+  </section>
+
+  <!-- Skill Map -->
+  <section class="report-section mb-6">
+    <h2 class="section-title">Skill Map</h2>
+    <div id="report-skills" class="report-skills-grid">
+      <!-- tarjetas dinámicas -->
+    </div>
+  </section>
+
+  <!-- Transcripción IA -->
+  <section class="report-section mb-6">
+    <h2 class="section-title">Transcripción IA</h2>
+    <div id="report-transcript" class="report-box">Cargando...</div>
+  </section>
+
+  <!-- Feedback Mentor -->
+  <section class="report-section mb-8">
+    <h2 class="section-title">Feedback del Mentor</h2>
+    <div id="report-feedback" class="report-box">Cargando...</div>
+  </section>
+
+  <!-- Botones finales -->
+  <div class="session-controls">
+    <button id="btn-home" class="btn-outline">Volver al Inicio</button>
+    <button id="btn-download" class="btn-primary">Descargar Informe</button>
+  </div>
+
+</div>
+
+<script src="../assets/js/pages/report.js"></script>
