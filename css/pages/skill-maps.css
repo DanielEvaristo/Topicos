@@ -1,0 +1,122 @@
+/* assets/css/pages/skill-maps.css */
+.skill-maps-container {
+  max-width: 840px;
+  margin: 80px auto;
+  padding: 0 20px;
+}
+.steps {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  position: relative;
+  padding: 22px 0 12px;
+}
+.steps::before {
+  content: "";
+  position: absolute;
+  top: 28px;
+  left: 50%;
+  width: 88%;
+  max-width: 660px;
+  height: 4px;
+  background: var(--gray-light);
+  transform: translateX(-50%);
+  z-index: 0;
+}
+.step {
+  list-style: none;
+  text-align: center;
+  width: 92px;
+  z-index: 1;
+}
+.step-icon {
+  width: 36px;
+  height: 36px;
+  display: grid;
+  place-content: center;
+  margin: 0 auto 8px;
+  border-radius: 50%;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  background: var(--gray);
+}
+.step-text {
+  font-size: 14px;
+  color: var(--gray-dark);
+}
+.step.done .step-icon { background: var(--success); }
+.step.current .step-icon { background: var(--primary); }
+.step.done .step-text  { color: var(--success); }
+.step.current .step-text{ color: var(--primary); }
+
+.page-title {
+  font-size: 2.25rem;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+}
+.subtitle {
+  font-size: 1rem;
+  color: var(--gray-dark);
+}
+
+.skillcards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.25rem;
+}
+
+.skill-card {
+  background: var(--light);
+  border: 1px solid var(--gray-light);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  transition: box-shadow 0.2s;
+}
+.skill-card:hover {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.skill-name {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--dark);
+}
+
+.level-container {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  color: var(--gray-dark);
+}
+
+.level-slider {
+  width: 100%;
+}
+
+.continue-wrapper {
+  text-align: right;
+}
+.btn-continue {
+  background: var(--success);
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.8rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+.btn-continue:hover {
+  background: var(--success-light);
+  transform: translateY(-2px);
+}
+
+body.dark-mode .skill-card { background: #1e1e1e; border-color: #333; }
+body.dark-mode .skill-name { color: #f4f6f9; }
+body.dark-mode .level-container { color: #bbc5d5; }
+body.dark-mode .btn-continue:hover { background: #34d399; }

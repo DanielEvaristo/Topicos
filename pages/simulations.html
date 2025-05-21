@@ -1,0 +1,175 @@
+<!-- Página de Mis Simulaciones - Nuevo diseño -->
+<div class="simulations-container">
+    <div class="page-header">
+        <div class="title-area">
+            <h1 class="page-title">Mis Simulaciones</h1>
+            <p class="page-subtitle">Revisa y gestiona tus sesiones de práctica</p>
+        </div>
+        <div class="header-actions">
+            <button id="filterButton" class="btn-icon">
+                <i class="icon-filter"></i>
+            </button>
+            <button id="newSimulationButton" class="btn-primary">
+                Nueva Simulación
+            </button>
+        </div>
+    </div>
+
+    <!-- Panel de filtros -->
+    <div class="filter-bar" id="filtersPanel" style="display: none;">
+        <div class="filter-group">
+            <label class="filter-label">Tipo</label>
+            <div class="filter-options">
+                <button class="filter-btn active">Todas</button>
+                <button class="filter-btn">Técnica</button>
+                <button class="filter-btn">Comportamental</button>
+                <button class="filter-btn">Sistemas</button>
+                <button class="filter-btn">Código</button>
+            </div>
+        </div>
+        <div class="filter-group">
+            <label class="filter-label">Estado</label>
+            <div class="filter-options">
+                <button class="filter-btn active">Todos</button>
+                <button class="filter-btn">Completados</button>
+                <button class="filter-btn">Pendientes</button>
+            </div>
+        </div>
+        <div class="filter-group">
+            <label class="filter-label">Ordenar</label>
+            <div class="filter-options">
+                <button class="filter-btn active">Recientes</button>
+                <button class="filter-btn">Puntuación</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Panel de estadísticas -->
+    <div class="stats-panel">
+        <div class="stat-item">
+            <span class="stat-number">12</span>
+            <span class="stat-label">Total</span>
+        </div>
+        <div class="stat-item">
+            <span class="stat-number">8</span>
+            <span class="stat-label">Completadas</span>
+        </div>
+        <div class="stat-item">
+            <span class="stat-number">85%</span>
+            <span class="stat-label">Promedio</span>
+        </div>
+        <div class="stat-item">
+            <span class="stat-number">5</span>
+            <span class="stat-label">Con feedback</span>
+        </div>
+    </div>
+    
+    <!-- Mensaje de próxima simulación -->
+    <div class="next-simulation-alert">
+        <div class="alert-icon">
+            <i class="icon-calendar"></i>
+        </div>
+        <div class="alert-content">
+            <h4>Próxima simulación programada</h4>
+            <p>Tienes una entrevista comportamental el 22 de mayo a las 14:00</p>
+        </div>
+        <div class="alert-actions">
+            <button class="btn-text">Ver detalles</button>
+            <button class="btn-primary">Iniciar</button>
+        </div>
+    </div>
+
+    <!-- Lista de simulaciones -->
+    <div class="simulation-list">
+        <!-- Simulación completada -->
+        <div class="simulation-card completed">
+            <div class="card-header">
+                <span class="simulation-type">Técnica</span>
+                <span class="simulation-date">15 May 2025</span>
+            </div>
+            <div class="card-body">
+                <h3 class="simulation-title">Estructura de Datos y Algoritmos</h3>
+                <div class="simulation-info">
+                    <span class="info-item"><i class="icon-time"></i> 45 min</span>
+                    <span class="info-item"><i class="icon-mentor"></i> Carlos Rodríguez</span>
+                </div>
+                <div class="chip-container">
+                    <span class="chip">Algoritmos</span>
+                    <span class="chip">Java</span>
+                </div>
+                <div class="score-display">
+                    <div class="score-circle">
+                        <span class="score-value">92</span>
+                    </div>
+                    <div class="feedback-preview">
+                        "Buen conocimiento de algoritmos. Podría mejorar explicación de complejidad espacial."
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer">
+                <button class="btn-secondary">Ver detalles</button>
+            </div>
+        </div>
+
+        <!-- Simulación en progreso -->
+        <div class="simulation-card in-progress">
+            <div class="card-header">
+                <span class="simulation-type">Sistema</span>
+                <span class="simulation-date">19 May 2025</span>
+            </div>
+            <div class="card-body">
+                <h3 class="simulation-title">Diseño de Sistema: Aplicación de Mensajería</h3>
+                <div class="simulation-info">
+                    <span class="info-item"><i class="icon-time"></i> 60 min estimados</span>
+                </div>
+                <div class="chip-container">
+                    <span class="chip">Arquitectura</span>
+                    <span class="chip">Backend</span>
+                </div>
+                <div class="progress-container">
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 45%"></div>
+                    </div>
+                    <span class="progress-text">45% completado</span>
+                </div>
+            </div>
+            <div class="card-footer">
+                <button class="btn-primary">Continuar</button>
+            </div>
+        </div>
+
+        <!-- Simulación con feedback pendiente -->
+        <div class="simulation-card pending">
+            <div class="card-header">
+                <span class="simulation-type">Codificación</span>
+                <span class="simulation-date">18 May 2025</span>
+            </div>
+            <div class="card-body">
+                <h3 class="simulation-title">Arrays y Strings: Problemas Comunes</h3>
+                <div class="simulation-info">
+                    <span class="info-item"><i class="icon-time"></i> 38 min</span>
+                    <span class="info-item"><i class="icon-pending"></i> Feedback pendiente</span>
+                </div>
+                <div class="chip-container">
+                    <span class="chip">JavaScript</span>
+                    <span class="chip">Estructuras</span>
+                </div>
+                <div class="status-message">
+                    <i class="icon-loading"></i> El mentor está revisando tu simulación (65%)
+                </div>
+            </div>
+            <div class="card-footer">
+                <button class="btn-secondary">Ver registro</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Paginación -->
+    <div class="pagination">
+        <button class="page-btn disabled"><i class="icon-prev"></i></button>
+        <button class="page-btn active">1</button>
+        <button class="page-btn">2</button>
+        <button class="page-btn">3</button>
+        <button class="page-btn"><i class="icon-next"></i></button>
+    </div>
+</div>

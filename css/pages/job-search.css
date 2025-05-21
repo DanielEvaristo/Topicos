@@ -1,0 +1,189 @@
+/* ==========================================================================
+   Job Search (partial)
+   Ruta: assets/css/pages/job-search.css
+=========================================================================== */
+
+.job-search-container {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+/* Pasos */
+.steps {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  position: relative;
+  padding: 20px 0 10px;
+}
+.steps::before {
+  content: "";
+  position: absolute;
+  top: 26px;
+  left: 50%;
+  width: 90%;
+  max-width: 640px;
+  height: 3px;
+  background: var(--gray-light);
+  transform: translateX(-50%);
+}
+.step {
+  list-style: none;
+  text-align: center;
+  width: 90px;
+  z-index: 1;
+}
+.step-icon {
+  display: grid;
+  place-content: center;
+  width: 34px; height: 34px;
+  margin: 0 auto 6px;
+  border-radius: 50%;
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+  background: var(--gray);
+}
+.step-text {
+  font-size: 13px;
+  color: var(--gray-dark);
+}
+.step.done .step-icon { background: var(--success); }
+.step.current .step-icon { background: var(--primary); }
+.step.done .step-text  { color: var(--success); }
+.step.current .step-text{ color: var(--primary); }
+
+/* Título */
+.page-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: var(--primary);
+}
+
+/* Buscador */
+.search-bar {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 1.5rem;
+}
+.search-bar .form-control {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border: 1px solid var(--gray-light);
+  border-radius: 0.375rem;
+  background: var(--light);
+}
+.btn-search {
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  border-radius: 0.375rem;
+  padding: 0 1rem;
+  font-size: 1.25rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.btn-search:hover {
+  background: var(--primary-dark);
+}
+
+/* Resultados */
+.results-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+.job-card {
+  padding: 1rem;
+  border: 1px solid var(--gray-light);
+  border-radius: 0.375rem;
+  cursor: pointer;
+  transition: border 0.2s, background 0.2s;
+}
+.job-card:hover {
+  border-color: var(--primary);
+}
+.job-card.selected {
+  border-color: var(--primary);
+  background: var(--primary-light);
+}
+.job-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+.job-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--dark);
+}
+.job-level {
+  font-size: 0.875rem;
+  color: var(--secondary);
+}
+.job-company,
+.job-location {
+  font-size: 0.875rem;
+  color: var(--gray-dark);
+  margin-bottom: 0.25rem;
+}
+.job-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+.job-tag {
+  background: var(--secondary);
+  color: #fff;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  border-radius: 0.25rem;
+}
+
+/* Continuar */
+.continue-wrapper {
+  text-align: right;
+}
+.btn-continue {
+  background: var(--success);
+  color: #fff;
+  border: none;
+  border-radius: 0.375rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+.btn-continue:disabled {
+  background: var(--gray);
+  cursor: not-allowed;
+}
+.btn-continue:not(:disabled):hover {
+  background: var(--success-light);
+  transform: translateY(-2px);
+}
+
+/* Dark mode */
+body.dark-mode .form-control {
+  background: var(--dark);
+  border-color: #333;
+  color: #f4f6f9;
+}
+body.dark-mode .job-card {
+  background: var(--dark);
+  border-color: #333;
+}
+body.dark-mode .job-card:hover {
+  background: #1e1e1e;
+}
+body.dark-mode .job-title,
+body.dark-mode .job-company,
+body.dark-mode .job-location {
+  color: #f4f6f9;
+}

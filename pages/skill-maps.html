@@ -1,0 +1,59 @@
+<!-- pages/skill-maps.html (fragmento para inyectar en tu layout principal) -->
+<div class="skill-maps-container container">
+
+  <!-- Pasos (idéntico al de Job Search) -->
+  <ol class="steps mb-4" aria-label="Flujo de práctica">
+    <li class="step done"><span class="step-icon">1</span><span class="step-text">Inicio</span></li>
+    <li class="step done"><span class="step-icon">2</span><span class="step-text">Búsqueda</span></li>
+    <li class="step current"><span class="step-icon">3</span><span class="step-text">Skill Maps</span></li>
+    <li class="step"><span class="step-icon">4</span><span class="step-text">Sesión IA</span></li>
+    <li class="step"><span class="step-icon">5</span><span class="step-text">Mentor</span></li>
+    <li class="step"><span class="step-icon">6</span><span class="step-text">Reporte</span></li>
+  </ol>
+
+  <!-- Título y subtítulo -->
+  <h1 id="skillmaps-title" class="page-title text-center mb-4">
+    Skill Map para: Tu Rol
+  </h1>
+  <p class="subtitle text-center mb-6">
+    Ajusta tu nivel actual para cada habilidad y alcanza el objetivo marcado.
+  </p>
+
+  <!-- Grid de tarjetas con ejemplos estáticos -->
+  <div id="skillcards-grid" class="skillcards-grid mb-8">
+    <div class="skill-card">
+      <div class="skill-name">React.js</div>
+      <div class="level-container">
+        <span>Actual: <span class="current-val">3</span></span>
+        <span>Objetivo: 5</span>
+      </div>
+      <input type="range" min="0" max="5" value="3" class="level-slider" data-target="5" />
+    </div>
+    <div class="skill-card">
+      <div class="skill-name">JavaScript</div>
+      <div class="level-container">
+        <span>Actual: <span class="current-val">4</span></span>
+        <span>Objetivo: 5</span>
+      </div>
+      <input type="range" min="0" max="5" value="4" class="level-slider" data-target="5" />
+    </div>
+    <div class="skill-card">
+      <div class="skill-name">CSS3</div>
+      <div class="level-container">
+        <span>Actual: <span class="current-val">2</span></span>
+        <span>Objetivo: 4</span>
+      </div>
+      <input type="range" min="0" max="5" value="2" class="level-slider" data-target="4" />
+    </div>
+  </div>
+
+  <!-- Botón continuar -->
+  <div class="continue-wrapper mb-12">
+    <button id="btn-start-ia" class="btn-continue">
+      Ir a Sesión IA →
+    </button>
+  </div>
+
+</div>
+
+<script src="../assets/js/pages/skill-maps.js"></script>

@@ -1,0 +1,428 @@
+<!-- Página de Skill Map -->
+<div class="skill-map-container">
+    <div class="page-header">
+        <h1 class="page-title">Skill Map</h1>
+        <p class="page-subtitle">Visualiza y haz seguimiento de las habilidades necesarias para tu rol tech</p>
+    </div>
+    
+    <!-- Selector de rol -->
+    <div class="role-selector">
+        <div class="current-role">
+            <div class="role-icon">
+                <i class="icon-code"></i>
+            </div>
+            <div class="role-info">
+                <h3 class="role-title">Desarrollador Backend Senior</h3>
+                <div class="role-meta">
+                    <span class="role-category">Backend</span>
+                    <span class="role-level">Senior</span>
+                </div>
+            </div>
+            <button class="btn-icon" id="changeRoleBtn">
+                <i class="icon-edit"></i>
+            </button>
+        </div>
+    </div>
+    
+    <!-- Resumen de habilidades -->
+    <div class="skills-summary">
+        <div class="summary-card">
+            <div class="summary-number">42</div>
+            <div class="summary-label">Habilidades totales</div>
+        </div>
+        <div class="summary-card">
+            <div class="summary-number">28</div>
+            <div class="summary-label">Dominadas</div>
+        </div>
+        <div class="summary-card">
+            <div class="summary-number">10</div>
+            <div class="summary-label">En progreso</div>
+        </div>
+        <div class="summary-card">
+            <div class="summary-number">4</div>
+            <div class="summary-label">Por iniciar</div>
+        </div>
+    </div>
+    
+    <!-- Progreso general -->
+    <div class="overall-progress">
+        <div class="progress-header">
+            <h3>Progreso general</h3>
+            <span class="progress-percent">66%</span>
+        </div>
+        <div class="progress-bar-container">
+            <div class="progress-bar" style="width: 66%;"></div>
+        </div>
+    </div>
+    
+    <!-- Categorías de habilidades -->
+    <div class="skill-categories">
+        <!-- Categoría de lenguajes de programación -->
+        <div class="category-section">
+            <div class="category-header">
+                <h2 class="category-title">Lenguajes de Programación</h2>
+                <div class="category-progress">
+                    <span class="progress-text">85% completado</span>
+                    <div class="progress-bar-small">
+                        <div class="progress-fill" style="width: 85%;"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="skills-grid">
+                <div class="skill-card mastered">
+                    <div class="skill-header">
+                        <span class="skill-name">Java</span>
+                        <span class="skill-badge">Esencial</span>
+                    </div>
+                    <div class="skill-level">
+                        <div class="level-dots">
+                            <span class="dot filled"></span>
+                            <span class="dot filled"></span>
+                            <span class="dot filled"></span>
+                            <span class="dot filled"></span>
+                            <span class="dot filled"></span>
+                        </div>
+                        <span class="level-text">Dominado</span>
+                    </div>
+                    <div class="skill-actions">
+                        <button class="btn-text">Ver recursos</button>
+                        <button class="btn-text">Practicar</button>
+                    </div>
+                </div>
+                
+                <div class="skill-card in-progress">
+                    <div class="skill-header">
+                        <span class="skill-name">Python</span>
+                        <span class="skill-badge">Recomendado</span>
+                    </div>
+                    <div class="skill-level">
+                        <div class="level-dots">
+                            <span class="dot filled"></span>
+                            <span class="dot filled"></span>
+                            <span class="dot filled"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
+                        <span class="level-text">Intermedio</span>
+                    </div>
+                    <div class="skill-actions">
+                        <button class="btn-text">Ver recursos</button>
+                        <button class="btn-text">Practicar</button>
+                    </div>
+                </div>
+                
+                <div class="skill-card mastered">
+                    <div class="skill-header">
+                        <span class="skill-name">SQL</span>
+                        <span class="skill-badge">Esencial</span>
+                    </div>
+                    <div class="skill-level">
+                        <div class="level-dots">
+                            <span class="dot filled"></span>
+                            <span class="dot filled"></span>
+                            <span class="dot filled"></span>
+                            <span class="dot filled"></span>
+                            <span class="dot filled"></span>
+                        </div>
+                        <span class="level-text">Dominado</span>
+                    </div>
+                    <div class="skill-actions">
+                        <button class="btn-text">Ver recursos</button>
+                        <button class="btn-text">Practicar</button>
+                    </div>
+                </div>
+                
+                <div class="skill-card not-started">
+                    <div class="skill-header">
+                        <span class="skill-name">Rust</span>
+                        <span class="skill-badge">Opcional</span>
+                    </div>
+                    <div class="skill-level">
+                        <div class="level-dots">
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
+                        <span class="level-text">No iniciado</span>
+                    </div>
+                    <div class="skill-actions">
+                        <button class="btn-text">Ver recursos</button>
+                        <button class="btn-text">Iniciar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Categoría de frameworks -->
+        <div class="category-section">
+            <div class="category-header">
+                <h2 class="category-title">Frameworks y Bibliotecas</h2>
+                <div class="category-progress">
+                    <span class="progress-text">75% completado</span>
+                    <div class="progress-bar-small">
+                        <div class="progress-fill" style="width: 75%;"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="skills-grid">
+                <div class="skill-card mastered">
+                    <div class="skill-header">
+                        <span class="skill-name">Spring Boot</span>
+                        <span class="skill-badge">Esencial</span>
+                    </div>
+                    <div class="skill-level">
+                        <div class="level-dots">
+                            <span class="dot filled"></span>
+                            <span class="dot filled"></span>
+                            <span class="dot filled"></span>
+                            <span class="dot filled"></span>
+                            <span class="dot filled"></span>
+                        </div>
+                        <span class="level-text">Dominado</span>
+                    </div>
+                    <div class="skill-actions">
+                        <button class="btn-text">Ver recursos</button>
+                        <button class="btn-text">Practicar</button>
+                    </div>
+                </div>
+                
+                <div class="skill-card in-progress">
+                    <div class="skill-header">
+                        <span class="skill-name">Django</span>
+                        <span class="skill-badge">Recomendado</span>
+                    </div>
+                    <div class="skill-level">
+                        <div class="level-dots">
+                            <span class="dot filled"></span>
+                            <span class="dot filled"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
+                        <span class="level-text">Principiante</span>
+                    </div>
+                    <div class="skill-actions">
+                        <button class="btn-text">Ver recursos</button>
+                        <button class="btn-text">Practicar</button>
+                    </div>
+                </div>
+                
+                <div class="skill-card mastered">
+                    <div class="skill-header">
+                        <span class="skill-name">Hibernate</span>
+                        <span class="skill-badge">Esencial</span>
+                    </div>
+                    <div class="skill-level">
+                        <div class="level-dots">
+                            <span class="dot filled"></span>
+                            <span class="dot filled"></span>
+                            <span class="dot filled"></span>
+                            <span class="dot filled"></span>
+                            <span class="dot"></span>
+                        </div>
+                        <span class="level-text">Avanzado</span>
+                    </div>
+                    <div class="skill-actions">
+                        <button class="btn-text">Ver recursos</button>
+                        <button class="btn-text">Practicar</button>
+                    </div>
+                </div>
+                
+                <div class="skill-card in-progress">
+                    <div class="skill-header">
+                        <span class="skill-name">Node.js Express</span>
+                        <span class="skill-badge">Recomendado</span>
+                    </div>
+                    <div class="skill-level">
+                        <div class="level-dots">
+                            <span class="dot filled"></span>
+                            <span class="dot filled"></span>
+                            <span class="dot filled"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
+                        <span class="level-text">Intermedio</span>
+                    </div>
+                    <div class="skill-actions">
+                        <button class="btn-text">Ver recursos</button>
+                        <button class="btn-text">Practicar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Categoría de bases de datos -->
+        <div class="category-section">
+            <div class="category-header">
+                <h2 class="category-title">Bases de Datos</h2>
+                <div class="category-progress">
+                    <span class="progress-text">60% completado</span>
+                    <div class="progress-bar-small">
+                        <div class="progress-fill" style="width: 60%;"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="skills-grid">
+                <div class="skill-card mastered">
+                    <div class="skill-header">
+                        <span class="skill-name">MySQL</span>
+                        <span class="skill-badge">Esencial</span>
+                    </div>
+                    <div class="skill-level">
+                        <div class="level-dots">
+                            <span class="dot filled"></span>
+                            <span class="dot filled"></span>
+                            <span class="dot filled"></span>
+                            <span class="dot filled"></span>
+                            <span class="dot filled"></span>
+                        </div>
+                        <span class="level-text">Dominado</span>
+                    </div>
+                    <div class="skill-actions">
+                        <button class="btn-text">Ver recursos</button>
+                        <button class="btn-text">Practicar</button>
+                    </div>
+                </div>
+                
+                <div class="skill-card in-progress">
+                    <div class="skill-header">
+                        <span class="skill-name">MongoDB</span>
+                        <span class="skill-badge">Recomendado</span>
+                    </div>
+                    <div class="skill-level">
+                        <div class="level-dots">
+                            <span class="dot filled"></span>
+                            <span class="dot filled"></span>
+                            <span class="dot filled"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
+                        <span class="level-text">Intermedio</span>
+                    </div>
+                    <div class="skill-actions">
+                        <button class="btn-text">Ver recursos</button>
+                        <button class="btn-text">Practicar</button>
+                    </div>
+                </div>
+                
+                <div class="skill-card in-progress">
+                    <div class="skill-header">
+                        <span class="skill-name">PostgreSQL</span>
+                        <span class="skill-badge">Recomendado</span>
+                    </div>
+                    <div class="skill-level">
+                        <div class="level-dots">
+                            <span class="dot filled"></span>
+                            <span class="dot filled"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
+                        <span class="level-text">Principiante</span>
+                    </div>
+                    <div class="skill-actions">
+                        <button class="btn-text">Ver recursos</button>
+                        <button class="btn-text">Practicar</button>
+                    </div>
+                </div>
+                
+                <div class="skill-card not-started">
+                    <div class="skill-header">
+                        <span class="skill-name">Redis</span>
+                        <span class="skill-badge">Opcional</span>
+                    </div>
+                    <div class="skill-level">
+                        <div class="level-dots">
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
+                        <span class="level-text">No iniciado</span>
+                    </div>
+                    <div class="skill-actions">
+                        <button class="btn-text">Ver recursos</button>
+                        <button class="btn-text">Iniciar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal de cambio de rol (inicialmente oculto) -->
+    <div class="modal" id="changeRoleModal" style="display: none;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Seleccionar Rol</h3>
+                <button class="btn-close" id="closeRoleModal">×</button>
+            </div>
+            <div class="modal-body">
+                <div class="search-container">
+                    <input type="text" class="search-input" placeholder="Buscar roles...">
+                </div>
+                
+                <div class="roles-list">
+                    <div class="role-option" data-role="backend-senior">
+                        <div class="role-option-icon">
+                            <i class="icon-server"></i>
+                        </div>
+                        <div class="role-option-info">
+                            <h4>Desarrollador Backend Senior</h4>
+                            <p>Java, Spring Boot, SQL, Microservicios</p>
+                        </div>
+                    </div>
+                    
+                    <div class="role-option" data-role="frontend-senior">
+                        <div class="role-option-icon">
+                            <i class="icon-browser"></i>
+                        </div>
+                        <div class="role-option-info">
+                            <h4>Desarrollador Frontend Senior</h4>
+                            <p>JavaScript, React, CSS, UX/UI</p>
+                        </div>
+                    </div>
+                    
+                    <div class="role-option" data-role="fullstack-senior">
+                        <div class="role-option-icon">
+                            <i class="icon-code"></i>
+                        </div>
+                        <div class="role-option-info">
+                            <h4>Desarrollador Full Stack Senior</h4>
+                            <p>JavaScript, Node.js, React, Bases de datos</p>
+                        </div>
+                    </div>
+                    
+                    <div class="role-option" data-role="data-scientist">
+                        <div class="role-option-icon">
+                            <i class="icon-chart"></i>
+                        </div>
+                        <div class="role-option-info">
+                            <h4>Data Scientist</h4>
+                            <p>Python, R, Machine Learning, Estadística</p>
+                        </div>
+                    </div>
+                    
+                    <div class="role-option" data-role="devops-engineer">
+                        <div class="role-option-icon">
+                            <i class="icon-cloud"></i>
+                        </div>
+                        <div class="role-option-info">
+                            <h4>DevOps Engineer</h4>
+                            <p>Docker, Kubernetes, CI/CD, Cloud Computing</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn-secondary" id="cancelRoleChange">Cancelar</button>
+                <button class="btn-primary" id="confirmRoleChange">Seleccionar</button>
+            </div>
+        </div>
+    </div>
+</div>

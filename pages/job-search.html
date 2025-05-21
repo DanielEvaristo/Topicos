@@ -1,0 +1,59 @@
+<!-- pages/job-search.html -->
+<div class="job-search-container">
+
+  <!-- Pasos -->
+  <ol class="steps mb-4" aria-label="Flujo de práctica">
+    <li class="step done">
+      <span class="step-icon">1</span>
+      <span class="step-text">Inicio</span>
+    </li>
+    <li class="step current">
+      <span class="step-icon">2</span>
+      <span class="step-text">Búsqueda</span>
+    </li>
+    <li class="step">
+      <span class="step-icon">3</span>
+      <span class="step-text">Skill Map</span>
+    </li>
+    <li class="step">
+      <span class="step-icon">4</span>
+      <span class="step-text">Sesión IA</span>
+    </li>
+    <li class="step">
+      <span class="step-icon">5</span>
+      <span class="step-text">Mentor</span>
+    </li>
+    <li class="step">
+      <span class="step-icon">6</span>
+      <span class="step-text">Reporte</span>
+    </li>
+  </ol>
+
+  <!-- Título -->
+  <h1 class="page-title">Encuentra tu puesto objetivo</h1>
+
+  <!-- Buscador -->
+  <div class="search-bar mb-4" role="search">
+    <input
+      id="job-keywords"
+      class="form-control"
+      type="text"
+      placeholder="Ej.: Front-End Developer, Data Analyst…"
+      aria-label="Buscar puesto"
+    />
+    <button type="button" id="btn-search" class="btn-search" aria-label="Buscar">
+      🔍
+    </button>
+  </div>
+
+  <!-- Resultados -->
+  <div id="job-results" class="results-grid"></div>
+
+  <!-- Continuar -->
+  <div class="continue-wrapper">
+    <button id="btn-continue" class="btn-continue" disabled>
+      Continuar →
+    </button>
+  </div>
+
+</div>

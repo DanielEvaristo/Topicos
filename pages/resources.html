@@ -1,0 +1,317 @@
+<!-- Página de Recursos -->
+<div class="resources-container">
+    <div class="page-header">
+        <div class="title-area">
+            <h1 class="page-title">Recursos</h1>
+            <p class="page-subtitle">Explora materiales de aprendizaje para potenciar tus habilidades</p>
+        </div>
+        <div class="header-actions">
+            <button id="filterResourcesBtn" class="btn-icon">
+                <i class="icon-filter"></i>
+            </button>
+            <button id="viewSavedBtn" class="btn-outlined">
+                <i class="icon-bookmark"></i> Guardados
+            </button>
+        </div>
+    </div>
+    
+    <!-- Panel de filtros -->
+    <div class="filter-bar" id="resourcesFilterPanel" style="display: none;">
+        <div class="filter-section">
+            <h3 class="filter-title">Categoría</h3>
+            <div class="filter-options">
+                <button class="filter-btn active">Todos</button>
+                <button class="filter-btn">Cursos</button>
+                <button class="filter-btn">Artículos</button>
+                <button class="filter-btn">Libros</button>
+                <button class="filter-btn">Videos</button>
+                <button class="filter-btn">Documentación</button>
+                <button class="filter-btn">Proyectos</button>
+            </div>
+        </div>
+        
+        <div class="filter-section">
+            <h3 class="filter-title">Nivel</h3>
+            <div class="filter-options">
+                <button class="filter-btn active">Todos</button>
+                <button class="filter-btn">Principiante</button>
+                <button class="filter-btn">Intermedio</button>
+                <button class="filter-btn">Avanzado</button>
+            </div>
+        </div>
+        
+        <div class="filter-section">
+            <h3 class="filter-title">Habilidad</h3>
+            <div class="filter-options">
+                <button class="filter-btn active">Todas</button>
+                <button class="filter-btn">Java</button>
+                <button class="filter-btn">Python</button>
+                <button class="filter-btn">SQL</button>
+                <button class="filter-btn">Microservicios</button>
+                <button class="filter-btn">Spring Boot</button>
+                <button class="filter-btn">Algoritmos</button>
+            </div>
+        </div>
+        
+        <div class="filter-section">
+            <div class="search-wrapper">
+                <input type="text" class="search-input" placeholder="Buscar recursos...">
+                <button class="search-btn">
+                    <i class="icon-search"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Destacados -->
+    <div class="featured-section">
+        <h2 class="section-title">Destacados</h2>
+        <div class="featured-slider">
+            <div class="featured-card">
+                <div class="featured-content">
+                    <div class="featured-tag">Curso Premium</div>
+                    <h3 class="featured-title">Microservicios con Spring Boot y Spring Cloud</h3>
+                    <p class="featured-description">Aprende a desarrollar arquitecturas basadas en microservicios utilizando las tecnologías más demandadas del ecosistema Spring.</p>
+                    <div class="featured-meta">
+                        <span class="featured-duration"><i class="icon-clock"></i> 12 horas</span>
+                        <span class="featured-level"><i class="icon-level"></i> Avanzado</span>
+                    </div>
+                </div>
+                <div class="featured-image">
+                    <img src="/assets/images/microservices.webp" alt="Microservicios con Spring Boot">
+                </div>
+                <div class="featured-actions">
+                    <button class="btn-primary">Ver curso</button>
+                    <button class="btn-icon featured-save">
+                        <i class="icon-bookmark"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="slider-controls">
+                <button class="slider-arrow prev">
+                    <i class="icon-arrow-left"></i>
+                </button>
+                <div class="slider-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+                <button class="slider-arrow next">
+                    <i class="icon-arrow-right"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Recomendados para ti -->
+    <div class="resource-section">
+        <div class="section-header">
+            <h2 class="section-title">Recomendados para ti</h2>
+            <button class="btn-text">Ver todos</button>
+        </div>
+        
+        <div class="resources-grid">
+            <div class="resource-card">
+                <div class="resource-type course">
+                    <i class="icon-video"></i>
+                </div>
+                <div class="resource-content">
+                    <h3 class="resource-title">Patrones de Diseño en Java</h3>
+                    <p class="resource-description">Aprende a implementar los patrones de diseño más comunes y cómo aplicarlos en proyectos reales.</p>
+                    <div class="resource-meta">
+                        <span class="resource-provider">Udemy</span>
+                        <span class="resource-rating">
+                            <i class="icon-star"></i> 4.8
+                        </span>
+                    </div>
+                    <div class="resource-tags">
+                        <span class="resource-tag">Java</span>
+                        <span class="resource-tag">Intermedio</span>
+                    </div>
+                </div>
+                <div class="resource-actions">
+                    <button class="btn-primary">Ver recurso</button>
+                    <button class="btn-icon">
+                        <i class="icon-bookmark-outline"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="resource-card">
+                <div class="resource-type article">
+                    <i class="icon-article"></i>
+                </div>
+                <div class="resource-content">
+                    <h3 class="resource-title">Optimización de Consultas SQL</h3>
+                    <p class="resource-description">Guía completa sobre cómo mejorar el rendimiento de tus consultas SQL y bases de datos relacionales.</p>
+                    <div class="resource-meta">
+                        <span class="resource-provider">Medium</span>
+                        <span class="resource-rating">
+                            <i class="icon-star"></i> 4.6
+                        </span>
+                    </div>
+                    <div class="resource-tags">
+                        <span class="resource-tag">SQL</span>
+                        <span class="resource-tag">Avanzado</span>
+                    </div>
+                </div>
+                <div class="resource-actions">
+                    <button class="btn-primary">Ver recurso</button>
+                    <button class="btn-icon">
+                        <i class="icon-bookmark-outline"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="resource-card">
+                <div class="resource-type video">
+                    <i class="icon-youtube"></i>
+                </div>
+                <div class="resource-content">
+                    <h3 class="resource-title">Introducción a Spring Security</h3>
+                    <p class="resource-description">Tutorial paso a paso para implementar autenticación y autorización en aplicaciones Spring Boot.</p>
+                    <div class="resource-meta">
+                        <span class="resource-provider">YouTube</span>
+                        <span class="resource-rating">
+                            <i class="icon-star"></i> 4.9
+                        </span>
+                    </div>
+                    <div class="resource-tags">
+                        <span class="resource-tag">Spring</span>
+                        <span class="resource-tag">Seguridad</span>
+                    </div>
+                </div>
+                <div class="resource-actions">
+                    <button class="btn-primary">Ver recurso</button>
+                    <button class="btn-icon">
+                        <i class="icon-bookmark-outline"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Colecciones Populares -->
+    <div class="collections-section">
+        <div class="section-header">
+            <h2 class="section-title">Colecciones Populares</h2>
+            <button class="btn-text">Ver todas</button>
+        </div>
+        
+        <div class="collections-grid">
+            <div class="collection-card">
+                <div class="collection-header">
+                    <h3 class="collection-title">Fundamentos de Java</h3>
+                    <span class="collection-count">12 recursos</span>
+                </div>
+                <p class="collection-description">Todo lo que necesitas para dominar los aspectos fundamentales de Java, desde sintaxis básica hasta programación orientada a objetos.</p>
+                <div class="collection-tags">
+                    <span class="collection-tag">Java</span>
+                    <span class="collection-tag">Principiante</span>
+                </div>
+                <button class="btn-outlined">Explorar colección</button>
+            </div>
+            
+            <div class="collection-card">
+                <div class="collection-header">
+                    <h3 class="collection-title">Arquitectura de Microservicios</h3>
+                    <span class="collection-count">8 recursos</span>
+                </div>
+                <p class="collection-description">Recursos esenciales para entender y construir arquitecturas basadas en microservicios con patrones modernos.</p>
+                <div class="collection-tags">
+                    <span class="collection-tag">Microservicios</span>
+                    <span class="collection-tag">Avanzado</span>
+                </div>
+                <button class="btn-outlined">Explorar colección</button>
+            </div>
+            
+            <div class="collection-card">
+                <div class="collection-header">
+                    <h3 class="collection-title">APIs RESTful</h3>
+                    <span class="collection-count">10 recursos</span>
+                </div>
+                <p class="collection-description">Diseña e implementa APIs RESTful eficientes y seguras siguiendo las mejores prácticas de la industria.</p>
+                <div class="collection-tags">
+                    <span class="collection-tag">API</span>
+                    <span class="collection-tag">REST</span>
+                </div>
+                <button class="btn-outlined">Explorar colección</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Tendencias -->
+    <div class="trending-section">
+        <div class="section-header">
+            <h2 class="section-title">Tendencias</h2>
+            <button class="btn-text">Ver todos</button>
+        </div>
+        
+        <div class="trending-grid">
+            <div class="trending-card">
+                <div class="trending-content">
+                    <div class="trending-info">
+                        <div class="trending-meta">
+                            <span class="trending-type">Curso</span>
+                            <span class="trending-views"><i class="icon-eye"></i> 5.2k</span>
+                        </div>
+                        <h3 class="trending-title">Algoritmos de Machine Learning para Desarrolladores</h3>
+                    </div>
+                    <div class="trending-provider">
+                        <img src="img/provider-logo.jpg" alt="Coursera" class="provider-logo">
+                        <span class="provider-name">Coursera</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="trending-card">
+                <div class="trending-content">
+                    <div class="trending-info">
+                        <div class="trending-meta">
+                            <span class="trending-type">Artículo</span>
+                            <span class="trending-views"><i class="icon-eye"></i> 3.8k</span>
+                        </div>
+                        <h3 class="trending-title">Seguridad en Aplicaciones Cloud Native</h3>
+                    </div>
+                    <div class="trending-provider">
+                        <img src="img/provider-logo.jpg" alt="Medium" class="provider-logo">
+                        <span class="provider-name">Medium</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="trending-card">
+                <div class="trending-content">
+                    <div class="trending-info">
+                        <div class="trending-meta">
+                            <span class="trending-type">Libro</span>
+                            <span class="trending-views"><i class="icon-eye"></i> 2.5k</span>
+                        </div>
+                        <h3 class="trending-title">Clean Architecture en la Práctica</h3>
+                    </div>
+                    <div class="trending-provider">
+                        <img src="img/provider-logo.jpg" alt="O'Reilly" class="provider-logo">
+                        <span class="provider-name">O'Reilly</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="trending-card">
+                <div class="trending-content">
+                    <div class="trending-info">
+                        <div class="trending-meta">
+                            <span class="trending-type">Proyecto</span>
+                            <span class="trending-views"><i class="icon-eye"></i> 4.1k</span>
+                        </div>
+                        <h3 class="trending-title">Construye un E-commerce con Spring Boot y React</h3>
+                    </div>
+                    <div class="trending-provider">
+                        <img src="img/provider-logo.jpg" alt="GitHub" class="provider-logo">
+                        <span class="provider-name">GitHub</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

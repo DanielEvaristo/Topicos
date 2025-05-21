@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline';">
+    <title>TechInterviewPro - Simulador de Entrevistas</title>
+    
+    <!-- Estilos base -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/forms.css">
+    <link rel="stylesheet" href="css/utilities.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#" class="logo" data-page="welcome">Tech<span>Interview</span>Pro</a>
+                <ul class="nav-menu">
+                    <li><a href="#" data-page="welcome">Inicio</a></li>
+                    <li><a href="#" data-page="simulations">Mis Simulaciones</a></li>
+                    <li><a href="#" data-page="skill-map">Skill Maps</a></li>
+                    <li><a href="#" data-page="resources">Recursos</a></li>
+                </ul>
+                <div class="nav-tools">
+                    <button id="searchButton" class="tool-button" title="Búsqueda global">
+                        🔍
+                    </button>
+                    <button id="themeButton" class="tool-button" title="Cambiar tema">
+                        <span id="themeIcon">🌙</span>
+                    </button>
+                    <button id="notificationsButton" class="tool-button" title="Notificaciones">
+                        🔔 <span class="badge">3</span>
+                    </button>
+                    <button id="profileButton" class="tool-button profile-button" title="Perfil">
+                        👤
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
+    <main class="container" id="pageContent">
+        <!-- El contenido de las páginas se cargará aquí dinámicamente -->
+        <div class="loading-spinner">Cargando...</div>
+    </main>
+    
+    <!-- Scripts base -->
+    <script src="js/main.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/theme.js"></script>
+</body>
+</html>

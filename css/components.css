@@ -1,0 +1,200 @@
+/* Estilos para componentes reutilizables */
+
+/* Botones */
+.btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    border: none;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-dark);
+}
+
+.btn-secondary {
+    background-color: var(--secondary);
+    color: white;
+}
+
+.btn-secondary:hover {
+    background-color: #6008a0;
+}
+
+.btn-outline {
+    background-color: transparent;
+    border: 2px solid var(--primary);
+    color: var(--primary);
+}
+
+.btn-outline:hover {
+    background-color: var(--primary);
+    color: white;
+}
+
+body.dark-mode .btn-outline {
+    border-color: var(--primary);
+    color: var(--primary);
+}
+
+body.dark-mode .btn-outline:hover {
+    background-color: var(--primary);
+    color: #f4f6f9;
+}
+
+.btn-sm {
+    padding: 6px 12px;
+    font-size: 14px;
+}
+
+.btn-lg {
+    padding: 14px 24px;
+    font-size: 18px;
+}
+
+/* Cards */
+.card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    margin-bottom: 25px;
+    overflow: hidden;
+}
+
+.card-header {
+    padding: 15px 20px;
+    border-bottom: 1px solid var(--gray-light);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-title {
+    font-weight: 600;
+    font-size: 18px;
+    margin: 0;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-footer {
+    padding: 15px 20px;
+    border-top: 1px solid var(--gray-light);
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Progress Bar */
+.progress-container {
+    width: 100%;
+    background-color: var(--gray-light);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 10px;
+    background-color: var(--primary);
+    width: 0;
+    transition: width 0.5s;
+}
+
+/* Etapas de progreso (Steps) */
+.steps {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.steps::before {
+    content: '';
+    position: absolute;
+    top: 14px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: var(--gray-light);
+    z-index: 0;
+}
+
+.step {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+.step-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--gray-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 8px;
+    color: var(--gray);
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.step.active .step-icon {
+    background-color: var(--primary);
+    color: white;
+}
+
+.step.completed .step-icon {
+    background-color: var(--success);
+    color: white;
+}
+
+.step-text {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--gray);
+    transition: all 0.3s;
+}
+
+.step.active .step-text {
+    color: var(--primary);
+}
+
+.step.completed .step-text {
+    color: var(--success);
+}
+
+/* Modo oscuro */
+body.dark-mode .card {
+    background-color: #1e1e1e;
+    color: #f4f6f9;
+}
+
+body.dark-mode .card-header,
+body.dark-mode .card-footer {
+    border-color: #333;
+}
+
+body.dark-mode .progress-container {
+    background-color: #333;
+}
+
+body.dark-mode .steps::before {
+    background-color: #444;
+}
+
+body.dark-mode .step-icon {
+    background-color: #444;
+    color: #ccc;
+}

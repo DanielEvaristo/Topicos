@@ -1,0 +1,49 @@
+<!-- pages/ai-session.html -->
+<div class="ai-session-container container">
+
+  <!-- Flujos de pasos -->
+  <ol class="steps mb-6" aria-label="Flujo de práctica">
+    <li class="step done"><span class="step-icon">1</span><span class="step-text">Inicio</span></li>
+    <li class="step done"><span class="step-icon">2</span><span class="step-text">Búsqueda</span></li>
+    <li class="step done"><span class="step-icon">3</span><span class="step-text">Skill Map</span></li>
+    <li class="step current"><span class="step-icon">4</span><span class="step-text">Sesión IA</span></li>
+    <li class="step"><span class="step-icon">5</span><span class="step-text">Mentor</span></li>
+    <li class="step"><span class="step-icon">6</span><span class="step-text">Reporte</span></li>
+  </ol>
+
+  <!-- Encabezado: Título + Timer -->
+  <div class="session-header mb-8">
+    <h1 class="page-title">Bloque IA: Simulación de Entrevista</h1>
+    <div id="timer" class="timer">15:00</div>
+  </div>
+
+  <!-- Sección de preguntas -->
+  <section class="session-section mb-8">
+    <h2 class="section-title">Preguntas</h2>
+    <div class="question-list">
+      <!-- JS inyecta .question-item -->
+    </div>
+  </section>
+
+  <!-- Sección de transcripción -->
+  <section class="session-section mb-8">
+    <h2 class="section-title">Transcripción</h2>
+    <div class="transcription-container">
+      <button id="btn-record" class="btn-record">
+        <span class="record-icon">⏺️</span>
+      </button>
+      <span id="record-status" class="record-status">Grabar</span>
+      <div class="transcript-box">
+        <p id="transcript-text" class="mb-0">La transcripción de tu respuesta aparecerá aquí mientras hablas.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Controles de navegación -->
+  <div class="session-controls">
+    <button id="btn-prev" class="btn-outline">Volver</button>
+    <button id="btn-next" class="btn-primary">Siguiente pregunta</button>
+  </div>
+
+</div>
+<script src="../assets/js/pages/ai-session.js"></script>

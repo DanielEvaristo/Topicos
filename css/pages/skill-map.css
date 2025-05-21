@@ -1,0 +1,676 @@
+/* Estilos para la página de Skill Map */
+
+/* Contenedor principal */
+.skill-map-container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 40px 24px;
+    font-family: 'Inter', 'Segoe UI', -apple-system, sans-serif;
+}
+
+/* Encabezado de página */
+.page-header {
+    margin-bottom: 32px;
+}
+
+.page-title {
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0 0 8px;
+    color: #1a202c;
+}
+
+.page-subtitle {
+    font-size: 16px;
+    color: #718096;
+    margin: 0;
+}
+
+/* Iconos (simulados como texto para este ejemplo) */
+.icon-code:before { content: "💻"; }
+.icon-edit:before { content: "✏️"; }
+.icon-server:before { content: "🖥️"; }
+.icon-browser:before { content: "🌐"; }
+.icon-chart:before { content: "📊"; }
+.icon-cloud:before { content: "☁️"; }
+
+/* Selector de rol */
+.role-selector {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 32px;
+}
+
+.current-role {
+    display: flex;
+    align-items: center;
+}
+
+.role-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #ebf4ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 16px;
+    font-size: 24px;
+    color: #4361ee;
+}
+
+.role-info {
+    flex: 1;
+}
+
+.role-title {
+    margin: 0 0 4px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #1a202c;
+}
+
+.role-meta {
+    display: flex;
+    gap: 12px;
+}
+
+.role-category, .role-level {
+    font-size: 14px;
+    color: #718096;
+    display: flex;
+    align-items: center;
+}
+
+.btn-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #f7fafc;
+    border: 1px solid #e2e8f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    color: #4a5568;
+    font-size: 18px;
+}
+
+.btn-icon:hover {
+    background-color: #ebf4ff;
+    color: #4361ee;
+}
+
+/* Resumen de habilidades */
+.skills-summary {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-bottom: 32px;
+}
+
+.summary-card {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.summary-number {
+    font-size: 32px;
+    font-weight: 700;
+    color: #4361ee;
+    margin-bottom: 8px;
+}
+
+.summary-label {
+    font-size: 14px;
+    color: #718096;
+}
+
+/* Progreso general */
+.overall-progress {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 32px;
+}
+
+.progress-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.progress-header h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: #1a202c;
+}
+
+.progress-percent {
+    font-size: 18px;
+    font-weight: 700;
+    color: #4361ee;
+}
+
+.progress-bar-container {
+    height: 12px;
+    background-color: #e2e8f0;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 100%;
+    background: linear-gradient(90deg, #4361ee, #805ad5);
+    border-radius: 6px;
+}
+
+/* Categorías de habilidades */
+.category-section {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    padding: 24px;
+    margin-bottom: 32px;
+}
+
+.category-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.category-title {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+    color: #1a202c;
+}
+
+.category-progress {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.progress-text {
+    font-size: 14px;
+    color: #4a5568;
+    margin-bottom: 4px;
+}
+
+.progress-bar-small {
+    width: 120px;
+    height: 6px;
+    background-color: #e2e8f0;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #4361ee, #805ad5);
+    border-radius: 3px;
+}
+
+/* Grid de habilidades */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.skill-card {
+    background-color: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 16px;
+    transition: all 0.2s ease;
+}
+
+.skill-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+}
+
+.skill-card.mastered {
+    border-left: 4px solid #10b981;
+}
+
+.skill-card.in-progress {
+    border-left: 4px solid #3b82f6;
+}
+
+.skill-card.not-started {
+    border-left: 4px solid #9ca3af;
+}
+
+.skill-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.skill-name {
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a202c;
+}
+
+.skill-badge {
+    font-size: 12px;
+    padding: 4px 8px;
+    border-radius: 20px;
+    background-color: #e2e8f0;
+    color: #4a5568;
+}
+
+.skill-card.mastered .skill-badge {
+    background-color: #d1fae5;
+    color: #065f46;
+}
+
+.skill-card.in-progress .skill-badge {
+    background-color: #dbeafe;
+    color: #1e40af;
+}
+
+.skill-level {
+    margin-bottom: 16px;
+}
+
+.level-dots {
+    display: flex;
+    gap: 4px;
+    margin-bottom: 4px;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #e2e8f0;
+}
+
+.dot.filled {
+    background-color: #4361ee;
+}
+
+.level-text {
+    font-size: 14px;
+    color: #718096;
+}
+
+.skill-card.mastered .level-text {
+    color: #10b981;
+}
+
+.skill-card.in-progress .level-text {
+    color: #3b82f6;
+}
+
+.skill-actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-text {
+    background: none;
+    border: none;
+    padding: 6px 12px;
+    color: #4361ee;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border-radius: 4px;
+}
+
+.btn-text:hover {
+    background-color: #ebf4ff;
+}
+
+/* Modal de cambio de rol */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: white;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 600px;
+    max-height: 80vh;
+    overflow-y: auto;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.modal-header {
+    padding: 20px;
+    border-bottom: 1px solid #e2e8f0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-header h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: #1a202c;
+}
+
+.btn-close {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #718096;
+    cursor: pointer;
+}
+
+.modal-body {
+    padding: 20px;
+}
+
+.search-container {
+    margin-bottom: 20px;
+}
+
+.search-input {
+    width: 100%;
+    padding: 12px 16px;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+    font-size: 16px;
+}
+
+.roles-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.role-option {
+    display: flex;
+    align-items: center;
+    padding: 16px;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.role-option:hover {
+    background-color: #f7fafc;
+    border-color: #4361ee;
+}
+
+.role-option.selected {
+    background-color: #ebf4ff;
+    border-color: #4361ee;
+}
+
+.role-option-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ebf4ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 16px;
+    font-size: 20px;
+    color: #4361ee;
+}
+
+.role-option-info h4 {
+    margin: 0 0 4px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a202c;
+}
+
+.role-option-info p {
+    margin: 0;
+    font-size: 14px;
+    color: #718096;
+}
+
+.modal-footer {
+    padding: 20px;
+    border-top: 1px solid #e2e8f0;
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+}
+
+.btn-secondary, .btn-primary {
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btn-secondary {
+    background-color: #f7fafc;
+    color: #4a5568;
+    border: 1px solid #e2e8f0;
+}
+
+.btn-secondary:hover {
+    background-color: #edf2f7;
+}
+
+.btn-primary {
+    background-color: #4361ee;
+    color: white;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #3a56d4;
+}
+
+/* Estilos para modo oscuro */
+body.dark-mode .page-title {
+    color: #f7fafc;
+}
+
+body.dark-mode .page-subtitle {
+    color: #a0aec0;
+}
+
+body.dark-mode .role-selector,
+body.dark-mode .summary-card,
+body.dark-mode .overall-progress,
+body.dark-mode .category-section,
+body.dark-mode .skill-card,
+body.dark-mode .modal-content {
+    background-color: #1a202c;
+    border-color: #2d3748;
+}
+
+body.dark-mode .role-title,
+body.dark-mode .progress-header h3,
+body.dark-mode .category-title,
+body.dark-mode .skill-name,
+body.dark-mode .modal-header h3,
+body.dark-mode .role-option-info h4 {
+    color: #f7fafc;
+}
+
+body.dark-mode .role-category,
+body.dark-mode .role-level,
+body.dark-mode .summary-label,
+body.dark-mode .progress-text,
+body.dark-mode .level-text,
+body.dark-mode .role-option-info p {
+    color: #a0aec0;
+}
+
+body.dark-mode .role-icon,
+body.dark-mode .role-option-icon {
+    background-color: rgba(67, 97, 238, 0.2);
+}
+
+body.dark-mode .btn-icon {
+    background-color: #2d3748;
+    border-color: #4a5568;
+    color: #e2e8f0;
+}
+
+body.dark-mode .btn-icon:hover {
+    background-color: #3a56d4;
+    color: white;
+}
+
+body.dark-mode .progress-bar-container,
+body.dark-mode .progress-bar-small,
+body.dark-mode .dot {
+    background-color: #2d3748;
+}
+
+body.dark-mode .skill-badge {
+    background-color: #2d3748;
+    color: #a0aec0;
+}
+
+body.dark-mode .skill-card.mastered .skill-badge {
+    background-color: rgba(16, 185, 129, 0.2);
+    color: #10b981;
+}
+
+body.dark-mode .skill-card.in-progress .skill-badge {
+    background-color: rgba(59, 130, 246, 0.2);
+    color: #3b82f6;
+}
+
+body.dark-mode .skill-card.mastered {
+    border-left-color: #10b981;
+}
+
+body.dark-mode .skill-card.in-progress {
+    border-left-color: #3b82f6;
+}
+
+body.dark-mode .skill-card.not-started {
+    border-left-color: #4a5568;
+}
+
+body.dark-mode .btn-text:hover {
+    background-color: rgba(67, 97, 238, 0.2);
+}
+
+body.dark-mode .modal-header,
+body.dark-mode .modal-footer {
+    border-color: #2d3748;
+}
+
+body.dark-mode .search-input {
+    background-color: #2d3748;
+    border-color: #4a5568;
+    color: #f7fafc;
+}
+
+body.dark-mode .role-option {
+    border-color: #4a5568;
+}
+
+body.dark-mode .role-option:hover,
+body.dark-mode .role-option.selected {
+    background-color: #2d3748;
+    border-color: #4361ee;
+}
+
+body.dark-mode .btn-secondary {
+    background-color: #2d3748;
+    border-color: #4a5568;
+    color: #e2e8f0;
+}
+
+body.dark-mode .btn-secondary:hover {
+    background-color: #4a5568;
+}
+
+/* Animaciones */
+@keyframes pulse {
+    0% { opacity: 0.8; }
+    50% { opacity: 1; }
+    100% { opacity: 0.8; }
+}
+
+.skill-card.in-progress .level-dots .dot.filled {
+    animation: pulse 2s infinite;
+}
+
+/* Media queries */
+@media (max-width: 992px) {
+    .skills-summary {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .skill-map-container {
+        padding: 24px 16px;
+    }
+    
+    .category-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+    
+    .category-progress {
+        align-items: flex-start;
+        width: 100%;
+    }
+    
+    .progress-bar-small {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .skills-summary {
+        grid-template-columns: 1fr;
+    }
+    
+    .current-role {
+        flex-wrap: wrap;
+    }
+    
+    .role-icon {
+        margin-bottom: 12px;
+    }
+    
+    .role-info {
+        width: 100%;
+        margin-bottom: 12px;
+    }
+    
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+}
